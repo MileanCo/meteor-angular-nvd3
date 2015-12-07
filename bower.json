@@ -1,0 +1,19 @@
+{
+  "name": "angular-nvd3",
+  "version": "0.0.1",
+  "homepage": "https://github.com/krispo/angular-nvd3",
+  "authors": [
+    "Joel Stenkvist <jmstenkv@ncsu.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-nvd3": "^1.x"
+  }
+}
