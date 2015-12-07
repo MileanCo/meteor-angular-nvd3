@@ -4,7 +4,7 @@ Package.describe({
   name: 'mystec:angular-nvd3',
   version: '1.0.5',
   // Brief, one-line summary of the package.
-  summary: 'Angular Directives for nvD3 charts',
+  summary: 'AngularJS directives for the NVD3 reusable charting library (based on D3). [official]',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/krispo/angular-nvd3',
 
