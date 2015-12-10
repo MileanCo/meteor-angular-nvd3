@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'mystec:angular-nvd3',
-  version: '1.0.5',
+  version: '1.0.6',
   // Brief, one-line summary of the package.
   summary: 'AngularJS directives for the NVD3 reusable charting library (based on D3). [official]',
   // URL to the Git repository containing the source code for this package.
@@ -14,7 +14,7 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.use([ "angular", "d3js:d3", "nvd3:nvd3" ], "client");
+  api.use([ "angular@1.3.0", "nvd3:nvd3@1.7.1" ], "client");
 
   api.addFiles([
     /* nvd3 base packages */
