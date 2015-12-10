@@ -14,32 +14,22 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-
-  api.use(["angular:angular@1.4.6"], "client");
+  api.use([ "angular", "d3js:d3", "nvd3:nvd3" ], "client");
 
   api.addFiles([
     /* nvd3 base packages */
-    //'client/bower_components/angular/angular.min.js',
-    'client/bower_components/d3/d3.min.js',
-    'client/bower_components/nvd3/build/nv.d3.js',
-    'client/bower_components/angular-nvd3/dist/angular-nvd3.min.js',
-    'client/bower_components/nvd3/build/nv.d3.css',
+    'bower_components/angular-nvd3/dist/angular-nvd3.min.js',
+
+    // NOT NEEDED with api.use("d3js", etc)
+      //'client/bower_components/angular/angular.min.js',
+      //'client/bower_components/d3/d3.min.js',
+      //'client/bower_components/nvd3/build/nv.d3.js',
+      //'client/bower_components/nvd3/build/nv.d3.css',
   ], "client");
 });
 
-
-/**
-Package.onUse(function(api) {
-  api.versionsFrom('1.2.1');
-  api.use('ecmascript');
-  api.addFiles('angular-nvd3.js');
-});
-
-
+// COMMAND: meteor test-packages ./
 Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('mystec:angular-nvd3');
-  api.addFiles('angular-nvd3-tests.js');
+  api.use(['mystec:angular-nvd3', 'tinytest', 'test-helpers'], ['client', 'server']);
+  api.add_files('package-test.js', ['client', 'server']);
 });
-*/
