@@ -196,4 +196,4 @@ Under developing in **0.x** branch
 Licensed under the terms of the [MIT License](https://github.com/krispo/angular-nvd3/blob/master/LICENSE)
 
 # Meteor Package Git
-https://github.com/mystec/angular-nvd3
+https://github.com/MileanCo/meteor-angular-nvd3/
